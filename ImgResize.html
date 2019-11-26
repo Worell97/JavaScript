@@ -1,0 +1,26 @@
+﻿<HTML>
+<HEAD>
+<TITLE>Redimensionamento de Imagem OnClick</TITLE>
+<link rel="stylesheet" type="text/css" href="Redimensionamento.css">
+<script>
+function resize(nome){
+	var AlturaTotal = (nome.height + 5);
+	var Largura = (nome.width + 5);
+	nome.height = Math.round(AlturaTotal);
+	nome.width = Math.round(Largura);
+};
+</script>
+<STYLE TYPE="text/css"></STYLE>
+</HEAD>
+<BODY id="indent" onclick="resize(backgroundImg)">
+	<header>
+	</header>
+	<h1>Redimensionamento de imagem em JavaScript</h1>
+	<div class="conteudo">
+		<img id="background-image" src="LogoGitHub.png" alt="" name="backgroundImg">
+	</div>   
+	<footer>
+	
+	</footer>
+</BODY>
+</HTML>
